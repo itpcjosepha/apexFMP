@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overview | apexFMP</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="../index.html">
+          <span class="brand-mark">A</span>
+          <span>apexFMP</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="../index.html">Home</a>
+          <a href="overview.html" class="active">Overview</a>
+          <a href="architecture.html">Architecture</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container narrow">
+        <section class="content-card">
+          <span class="eyebrow">Overview</span>
+          <h1>Why apexFMP exists</h1>
+          <p>
+            apexFMP was created to solve a fundamental problem in many FileMaker environments:
+            the interface was often constrained by layout-driven development, custom object logic,
+            and a closed ecosystem that did not align well with modern software practices.
+          </p>
+          <p>
+            The result is a FileMaker-first architecture where the database remains the system of
+            record, but the UI is authored in a modern web-native way. HTML, CSS, and JavaScript
+            handle the interface. FileMaker handles the business rules, data integrity, workflow,
+            and security model.
+          </p>
+          <p>
+            This creates a cleaner operating model: better UI control, stronger code review,
+            clearer contracts between front end and data, and a path toward team workflows that are
+            more common in the broader software stack.
+          </p>
+        </section>
+
+        <section class="content-card">
+          <h2>Core principles</h2>
+          <ul class="check-list">
+            <li>FileMaker remains the source of truth for data and process</li>
+            <li>HTML/CSS/JS provide the interface layer</li>
+            <li>FQL and JSON define the data contract</li>
+            <li>Merge variables inject dynamic content into templates</li>
+            <li>Web viewers render the final experience</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>apexFMP</p>
+        <p>&copy; <span id="year"></span> Joseph E. Arzate Jr.</p>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

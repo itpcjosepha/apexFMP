@@ -1,0 +1,11 @@
+# OS and editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Local environment
+env/
+.env
+
+# Logs
+*.log

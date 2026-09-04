@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Architecture | apexFMP</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="../index.html">
+          <span class="brand-mark">A</span>
+          <span>apexFMP</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="../index.html">Home</a>
+          <a href="overview.html">Overview</a>
+          <a href="architecture.html" class="active">Architecture</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container narrow">
+        <section class="content-card">
+          <span class="eyebrow">Architecture</span>
+          <h1>How apexFMP works</h1>
+          <p>
+            apexFMP organizes the application around a small set of clear contracts. FileMaker owns
+            the system of record, and the interface is built as HTML templates. Those templates are
+            hydrated using FQL-generated JSON data, then rendered in a FileMaker web viewer.
+          </p>
+        </section>
+
+        <section class="content-card">
+          <h2>Flow</h2>
+          <ol class="process-list">
+            <li>Build a template in HTML, CSS, and JavaScript</li>
+            <li>Define merge variables and their FQL data sources</li>
+            <li>Resolve those variables in FileMaker</li>
+            <li>Convert data to JSON for the browser</li>
+            <li>Render the page in the web viewer</li>
+            <li>Send actions back through the FileMaker script bridge</li>
+          </ol>
+        </section>
+
+        <section class="content-card">
+          <h2>Core technologies</h2>
+          <ul class="check-list">
+            <li>FQL for precise data retrieval</li>
+            <li>JSON for passing structured data between FileMaker and the browser</li>
+            <li>Set Field By Name for dynamic payload handling</li>
+            <li>Evaluate for dynamic logic and metadata-driven behavior</li>
+            <li>Perform JavaScript in web viewer for interaction and UI updates</li>
+            <li>Web viewer as the rendering surface</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>apexFMP</p>
+        <p>&copy; <span id="year"></span> Joseph E. Arzate Jr.</p>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
