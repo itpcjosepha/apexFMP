@@ -1,5 +1,16 @@
 {
   "schemaVersion": 1,
+  "apexBootstrapManifest": {
+    "title": "apexBootstrapManifest",
+    "description": "Bootstrap manifest for apexFMP runtime library discovery and webviewer contract settings.",
+    "designAnnotations": [
+      "Single-source discovery manifest for library version routing.",
+      "Top-level runtime variables define the baseline webviewer integration contract.",
+      "Library nodes are path-addressable for persistent-data bundle lookup and selective loading."
+    ],
+    "annotatedDate": "2026-10-21",
+    "author": "apexFMP Architecture"
+  },
   "apexLibName": "lib",
   "channel": "stable",
   "bundleVersion": "1.0.0",
