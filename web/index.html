@@ -14,98 +14,69 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260904" />
   </head>
   <body>
     <header class="site-header">
-      <div class="container nav">
-        <a class="brand" href="index.html">
-          <span class="brand-mark">A</span>
-          <span>apexFMP</span>
-        </a>
+      <div class="container nav nav-no-brand">
         <nav class="main-nav" aria-label="Main navigation">
-          <a href="index.html" class="active">Home</a>
-          <a href="pages/overview.html">Overview</a>
-          <a href="pages/architecture.html">Architecture</a>
+          <a href="#home" class="active">Home</a>
+          <a href="apexFMP.html">apexFMP</a>
+          <a href="#help">Help</a>
+          <a href="#about">About</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="container hero-grid">
+      <section id="home" class="hero">
+        <div class="container hero-layout">
+          <div class="hero-logo-panel">
+            <img class="hero-logo" src="assets/apexFMP_logo2.png" alt="apexFMP logo" />
+          </div>
           <div class="hero-copy">
-            <span class="eyebrow">FileMaker-first architecture</span>
-            <h1>Build modern interfaces while keeping FileMaker as the system of record.</h1>
-            <p>
-              apexFMP is a practical methodology that combines FileMaker, FQL, JSON,
-              HTML, CSS, JavaScript, and the web viewer into a cleaner, more scalable
-              application architecture.
+            <p class="eyebrow">Developer framework for Claris FileMaker Pro</p>
+            <h1>True "Separation Model" developer framework for FileMaker Pro!</h1>
+            <p class="lede">
+              apexFMP blends native CFMP functionality leveraging SQL, JSON, HTML, CSS, JavaScript,
+              and the web viewer to create a framework that is modern, lightweight, and scalable. Easy to learn and implement with it's built-in navigation and CRUD data actions. Scaffold alongside your exisiting project, no need to refactor your entire project.
             </p>
+            <ul class="hero-benefits">
+              <li>All native FMP. No plugin needed. Works with both local and hosted files.</li>
+              <li>Navigation and CRUD (create, read, update, delete) actions all built in; "right out of the gate".</li>
+              <li>True UI separation model. User interface code can be managed and developed independently.</li>
+              <li>Construct powerful SQL/FQL statements to retrieve and display data into your HTML UI pages.</li>
+              <li>Eliminate "one-off" relationships in your relationship graph traditionally required for UI purposes. Relationships stay data-centric.</li>
+              <li>Build beautiful, highly functional applications in hours with your favorite AI-assisted development tool.</li>
+              <li>Solution-agnostic. Apply the framework to new builds or existing solutions across any industry or use case.</li>
+              <li>Metadata-driven. Highly configurable platform that scales from simple to complex applications using agnostic code.</li>
+              <li>Portable code. Copy/paste pre-defined scripts, layouts, custom functions without refactoring.</li>
+              <li>File Size Reduction. Greatly decrease the size of your file(s), by as much as 75%.</li>
+              
+              
+ 
+            </ul>
+            <div class="hero-git-block">
+              <h3 class="hero-git-header">Unlock Modern Git and CI/CD Tools</h3>
+              <ul class="hero-git-benefits">
+                <li>Decouple your user interface into independent HTML pages. Track every visual change, automate your deployments, and collaborate using standard DevOps workflows!</li>
+                <li>Manage your FMP UI with branch, commit, pull, and push.</li>
+                <li>Full change history with clear who-changed-what tracking.</li>
+                <li>Safer experimentation in branches before touching production.</li>
+                <li>Easier team collaboration through pull requests and code reviews.</li>
+                <li>Fast rollback to known-good versions when something breaks.</li>
+                <li>Better release discipline with tags and versioned milestones.</li>
+                <li>Environment consistency by syncing the same UI source across dev, test, and production.</li>
+                <li>Built-in backup and recovery through remote repositories.</li>
+                <li>Auditability support from commit history.</li>
+              </ul>
+            </div>
+            <p class="hero-cta-line"><strong>Demo File: </strong> Download a free fully unlocked FMP file and see the framework in action.</p>
+            <p class="hero-cta-line"><strong>Build faster:</strong> Download a free unlocked "bare-bones" file to start a new project, or use it to copy the core framework into your existing solution.</p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="pages/overview.html">Explore the methodology</a>
-              <a class="btn btn-secondary" href="pages/architecture.html">View architecture</a>
+              <a class="btn btn-primary" href="apexFMP.html">Explore the method</a>
+              <a class="btn btn-secondary" href="#about">Learn about the author</a>
             </div>
-            <ul class="hero-points">
-              <li>FileMaker stays authoritative for business logic and data integrity</li>
-              <li>HTML/CSS/JS create a modern front-end experience</li>
-              <li>FQL and JSON replace brittle layout-driven patterns</li>
-            </ul>
-          </div>
-
-          <div class="hero-panel">
-            <div class="panel-card">
-              <h2>Core model</h2>
-              <div class="stack">
-                <div class="stack-item"><span>FileMaker</span><small>Data + workflow + rules</small></div>
-                <div class="stack-item"><span>HTML / CSS / JS</span><small>UI + interaction</small></div>
-                <div class="stack-item"><span>FQL / JSON</span><small>Data contracts + payloads</small></div>
-                <div class="stack-item"><span>Web Viewer</span><small>Render the experience</small></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="section-heading">
-            <span class="eyebrow">Why apexFMP</span>
-            <h2>Traditional FileMaker UI patterns are powerful, but limited.</h2>
-          </div>
-
-          <div class="feature-grid">
-            <article class="feature-card">
-              <h3>Better separation of concerns</h3>
-              <p>Keep the data model and process engine in FileMaker while building the interface in a modern web-native format.</p>
-            </article>
-            <article class="feature-card">
-              <h3>Cleaner data contracts</h3>
-              <p>Use merge variables, FQL, and JSON to define exactly what each form needs instead of creating layout-specific relationship dependencies.</p>
-            </article>
-            <article class="feature-card">
-              <h3>Stronger engineering workflow</h3>
-              <p>Work with source control, code review, branching, and reusable patterns that align with the broader software stack.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section alt">
-        <div class="container two-col">
-          <div>
-            <span class="eyebrow">What it helps with</span>
-            <h2>Interface design without losing FileMaker’s core strengths</h2>
-          </div>
-          <div>
-            <ul class="check-list">
-              <li>Modern HTML/CSS-based form templates</li>
-              <li>Reusable UI components and layout patterns</li>
-              <li>FQL-driven data retrieval and JSON payloads</li>
-              <li>JavaScript calculations and summary logic</li>
-              <li>Web viewer rendering with script-bridge communication</li>
-              <li>Git-based workflow and reviewable front-end code</li>
-            </ul>
           </div>
         </div>
       </section>
@@ -114,7 +85,7 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <p>apexFMP</p>
-        <p>&copy; <span id="year"></span> Joseph E. Arzate Jr.</p>
+        <p>© <span id="year"></span> Joseph E. Arzate Jr.</p>
       </div>
     </footer>
 
