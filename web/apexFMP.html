@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>apexFMP | Methodology</title>
+    <meta
+      name="description"
+      content="apexFMP methodology reference with architecture, standards, lifecycle, and implementation patterns."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260904" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">A</span>
+          <span>apexFMP</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="apexFMP.html" class="active">apexFMP</a>
+          <a href="#help">Help</a>
+          <a href="#about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="apexfmp" class="doc-layout">
+        <aside class="sidebar">
+          <div class="sidebar-inner">
+            <p class="sidebar-title">apexFMP</p>
+            <nav class="side-nav" aria-label="Documentation sections">
+              <a href="#filemaker-first-ui-architecture">FileMaker-first UI architecture</a>
+              <a href="#overview">Overview</a>
+              <a href="#why-this-methodology-exists">Why this methodology exists</a>
+              <a href="#core-principle">Core Principle</a>
+              <a href="#the-architecture">The architecture</a>
+              <a href="#the-standards-model">The standards model</a>
+              <a href="#the-lifecycle-of-a-form">The lifecycle of a form</a>
+              <a href="#technical-patterns">FileMaker technical patterns</a>
+              <a href="#why-this-is-powerful">Why this is powerful</a>
+              <a href="#benefits-over-traditional-filemaker-development">Benefits over traditional FileMaker development</a>
+              <a href="#advanced-considerations">Advanced considerations</a>
+              <a href="#git-pull-requests-and-alignment-with-the-web-stack">Git, pull requests, and alignment with the web stack</a>
+              <a href="#a-practical-summary-of-the-method">A practical summary of the method</a>
+              <a href="#benefits-at-a-glance">Benefits at a glance</a>
+              <a href="#final-summary">Final summary</a>
+              <a href="#short-definition">Short definition</a>
+            </nav>
+          </div>
+        </aside>
+
+        <article class="content">
+          <section id="filemaker-first-ui-architecture" class="content-section">
+            <p class="section-tag">A FileMaker-first UI architecture using HTML, CSS, JavaScript, and FQL</p>
+            <h2>A FileMaker-first UI architecture using HTML, CSS, JavaScript, and FQL</h2>
+            <p>
+              apexFMP treats FileMaker as the system of record while HTML, CSS, and JavaScript provide
+              the user interface layer. The result is a practical architecture where data integrity,
+              workflow, and business rules stay in FileMaker while the UI becomes modern and code-driven.
+            </p>
+          </section>
+
+          <section id="overview" class="content-section">
+            <p class="section-tag">Overview</p>
+            <h2>Overview</h2>
+            <p>
+              apexFMP is a FileMaker-first methodology for building modern applications using the
+              strengths of FileMaker together with the strengths of the web stack. It treats the UI
+              as an HTML-based presentation layer while keeping data, logic, relationships, and
+              workflow inside FileMaker.
+            </p>
+            <p>
+              This is not a rejection of FileMaker; it is a way to align FileMaker with the broader
+              software ecosystem without losing the platform's core strengths.
+            </p>
+          </section>
+
+          <section id="why-this-methodology-exists" class="content-section">
+            <p class="section-tag">Why this methodology exists</p>
+            <h2>Why this methodology exists</h2>
+            <p>
+              Traditional FileMaker development is powerful, but it is often constrained by layout-based
+              design, object-heavy interfaces, and patterns that do not scale well into modern web workflows.
+            </p>
+            <p>
+              apexFMP acknowledges that reality and intentionally separates the layers: FileMaker owns the
+              data model and business rules while HTML, CSS, and JavaScript handle the interface and interaction layer.
+            </p>
+          </section>
+
+          <section id="core-principle" class="content-section">
+            <p class="section-tag">Core Principle</p>
+            <h2>Core Principle</h2>
+            <p>
+              The core principle is simple: build the UI as HTML templates, inject FileMaker data using
+              merge variables and FQL, and render the result in a FileMaker web viewer.
+            </p>
+            <blockquote>
+              Build the UI as HTML templates, store them in a central system, inject FileMaker data by
+              merge variables, and render the final page in a FileMaker web viewer.
+            </blockquote>
+          </section>
+
+          <section id="the-architecture" class="content-section">
+            <p class="section-tag">The architecture</p>
+            <h2>The architecture</h2>
+            <p>
+              apexFMP is built on a disciplined split between system authority and presentation logic.
+              FileMaker remains the source of truth for data, workflow, rules, and relationship behavior,
+              while the browser is used for rendering, interactivity, and presentation-layer calculations.
+            </p>
+            <ul>
+              <li>HTML for the UI structure</li>
+              <li>CSS for the design system and layout</li>
+              <li>JavaScript for interaction and display logic</li>
+              <li>FQL and JSON for data retrieval and payload contracts</li>
+              <li>Web viewer for the final render surface</li>
+            </ul>
+          </section>
+
+          <section id="the-standards-model" class="content-section">
+            <p class="section-tag">The standards model</p>
+            <h2>The standards model</h2>
+            <p>
+              The methodology relies on a simple model: a UI repository for templates and a separate
+              form-variable system that maps merge codes to FQL-driven data retrieval.
+            </p>
+            <p>
+              This creates clean contracts between the browser and the FileMaker engine and reduces the need
+              for layout-specific relationship work just to support the interface.
+            </p>
+          </section>
+
+          <section id="the-lifecycle-of-a-form" class="content-section">
+            <p class="section-tag">The lifecycle of a form</p>
+            <h2>The lifecycle of a form</h2>
+            <ol>
+              <li>Create the HTML template in a modern editor.</li>
+              <li>Store the template as a central UI asset.</li>
+              <li>Define merge variables and their FQL query source.</li>
+              <li>Load the form and resolve merge fields in FileMaker.</li>
+              <li>Render the final HTML in the web viewer.</li>
+              <li>Send user actions back through the FileMaker script bridge.</li>
+            </ol>
+          </section>
+
+          <section id="technical-patterns" class="content-section">
+            <p class="section-tag">FileMaker technical patterns</p>
+            <h2>FileMaker technical patterns that make apexFMP practical</h2>
+            <p>
+              The methodology is not only conceptual. It is built on specific FileMaker features that make
+              it practical in production: FQL, Set Field By Name, Evaluate, JSON, JavaScript in the web viewer,
+              and the web viewer itself.
+            </p>
+            <ul>
+              <li><strong>FQL:</strong> query the exact data needed for a form.</li>
+              <li><strong>Set Field By Name:</strong> map dynamic payloads to record fields.</li>
+              <li><strong>Evaluate:</strong> execute dynamic formulas and logic.</li>
+              <li><strong>JSON:</strong> pass structured data between FileMaker and the browser.</li>
+              <li><strong>Perform JavaScript in Web Viewer:</strong> drive interaction from the browser side.</li>
+            </ul>
+          </section>
+
+          <section id="why-this-is-powerful" class="content-section">
+            <p class="section-tag">Why this is powerful</p>
+            <h2>Why this is powerful</h2>
+            <p>
+              This model separates interface design from data integrity, enables cleaner UI architecture,
+              improves maintainability, and creates a better fit with modern web tools, Git workflows, and code review.
+            </p>
+            <p>
+              It also reduces the tendency to overuse FileMaker-only relationship patterns for presentation concerns.
+            </p>
+          </section>
+
+          <section id="benefits-over-traditional-filemaker-development" class="content-section">
+            <p class="section-tag">Benefits over traditional FileMaker development</p>
+            <h2>Benefits over traditional FileMaker development</h2>
+            <p>
+              Traditional FileMaker development is often layout-driven and visually coupled to the data model.
+              apexFMP shifts the interface toward modern code-based authoring, improved reusability, and cleaner separation of concerns.
+            </p>
+            <ul>
+              <li>Better UI control</li>
+              <li>Stronger code review and versioning</li>
+              <li>Cleaner data contracts</li>
+              <li>Broader hiring flexibility</li>
+              <li>Better long-term maintainability</li>
+            </ul>
+          </section>
+
+          <section id="advanced-considerations" class="content-section">
+            <p class="section-tag">Advanced considerations</p>
+            <h2>Advanced considerations</h2>
+            <p>
+              The most mature form of apexFMP moves the UI into a version-controlled source model and
+              treats the front end like a modern software artifact rather than a rigid set of FileMaker objects.
+            </p>
+            <p>
+              This aligns the platform with the broader software stack while keeping FileMaker central to
+              data integrity, rules, and workflow.
+            </p>
+          </section>
+
+          <section id="git-pull-requests-and-alignment-with-the-web-stack" class="content-section">
+            <p class="section-tag">Git, pull requests, and alignment with the web stack</p>
+            <h2>Git, pull requests, and alignment with the web stack</h2>
+            <p>
+              Once the UI is authored as HTML, CSS, and JavaScript, the project begins to behave like a
+              modern application with code review, branching, and a conventional engineering workflow.
+            </p>
+            <p>
+              This is a major advantage because FileMaker no longer has to sit apart from the rest of the
+              engineering ecosystem. It can participate in a more familiar, more maintainable, and more scalable development process.
+            </p>
+          </section>
+
+          <section id="final-summary" class="content-section">
+            <p class="section-tag">Final summary</p>
+            <h2>Final summary</h2>
+            <p>
+              apexFMP is a FileMaker-first methodology for building modern applications without abandoning
+              the strengths that FileMaker brings to data, process, and workflow automation.
+            </p>
+            <p>
+              It is a practical model for teams who want the modernity of web-native UI engineering while
+              preserving FileMaker as the authoritative system of record.
+            </p>
+          </section>
+
+          <section id="a-practical-summary-of-the-method" class="content-section">
+            <p class="section-tag">A practical summary of the method</p>
+            <h2>A practical summary of the method</h2>
+            <p>
+              apexFMP combines FileMaker workflow and data control with web-native UI delivery.
+              FileMaker remains the transactional core, while HTML templates, JSON payloads,
+              and JavaScript-driven rendering provide the presentation layer.
+            </p>
+            <ul>
+              <li>FileMaker remains the model, workflow, and transactional engine.</li>
+              <li>HTML is the form template and presentation layer.</li>
+              <li>CSS governs consistency and visual control.</li>
+              <li>JavaScript handles interaction and presentation calculations.</li>
+              <li>FQL and merge variables form a clear data contract.</li>
+              <li>The web viewer renders the final user experience.</li>
+            </ul>
+          </section>
+
+          <section id="benefits-at-a-glance" class="content-section">
+            <p class="section-tag">Benefits at a glance</p>
+            <h2>Benefits at a glance</h2>
+            <ol>
+              <li>UI development is faster and more modern.</li>
+              <li>FileMaker layout mode is no longer the primary UI authoring tool.</li>
+              <li>Front-end design scales better through code and AI tooling.</li>
+              <li>A central UI table replaces scattered layout management patterns.</li>
+              <li>Data contracts become explicit and maintainable.</li>
+              <li>Forms are easier to reuse and version over time.</li>
+              <li>FileMaker remains strong for integrity and process control.</li>
+              <li>The web viewer becomes a full rendering runtime.</li>
+            </ol>
+          </section>
+
+          <section id="short-definition" class="content-section">
+            <p class="section-tag">Short definition</p>
+            <h2>Short definition</h2>
+            <blockquote>
+              A FileMaker-driven HTML front-end architecture where templates are authored as HTML,
+              dynamic content is injected via merge codes, FileMaker supplies data through FQL,
+              and the final experience is rendered in a web viewer.
+            </blockquote>
+          </section>
+        </article>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>apexFMP</p>
+        <p>© <span id="year"></span> Joseph E. Arzate Jr.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

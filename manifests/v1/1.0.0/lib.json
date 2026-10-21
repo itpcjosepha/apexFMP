@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "apexLibName": "lib",
+  "channel": "stable",
+  "bundleVersion": "1.0.0",
+  "publishedAt": "2026-10-20T00:00:00Z",
+  "libraries": {
+    "fm-bridge": {
+      "version": "1.0.0",
+      "file": "/downloads/lib/v1/1.0.0/fm-bridge.js",
+      "hash": "sha256-TODO"
+    },
+    "fm-lib-loader": {
+      "version": "1.0.0",
+      "file": "/downloads/lib/v1/1.0.0/fm-lib-loader.js",
+      "hash": "sha256-TODO"
+    },
+    "fm-results-core": {
+      "version": "1.0.0",
+      "file": "/downloads/lib/v1/1.0.0/fm-results-core.js",
+      "hash": "sha256-TODO"
+    },
+    "staff-results-runtime": {
+      "version": "1.0.0",
+      "file": "/downloads/lib/v1/1.0.0/staff-results-runtime.js",
+      "hash": "sha256-TODO"
+    }
+  }
+}
