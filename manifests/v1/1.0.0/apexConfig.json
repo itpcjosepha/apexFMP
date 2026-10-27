@@ -1,0 +1,102 @@
+
+
+{
+  "schemaVersion": 1,
+  "apexBootstrapManifest": {
+    "title": "apexBootstrapManifest",
+    "description": "Bootstrap manifest for apexFMP runtime library discovery and webviewer contract settings.",
+    "designAnnotations": [
+      "Single-source discovery manifest for library version routing.",
+      "Top-level runtime variables define the baseline webviewer integration contract.",
+      "Library nodes are path-addressable for persistent-data bundle lookup and selective loading."
+    ],
+    "annotatedDate": "2026-10-27",
+    "author": "apexFMP Architecture"
+  },
+  
+ 
+  "channel": "stable",
+  "bundleVersion": "1.0.3",
+  
+  "apexGlobals": {
+    "apexLibNameValue": "libraries",
+    "apexLibName": "schemaVersion",
+    "apexPublishedAtName": "publishedAt",
+    "apexPublishedAtValue": "2026-10-20T00:00:00Z",
+    "apexBootStrapManifestName": "apexBootstrapManifest",
+    "apexLibSchemaVersion": 1,
+    "apexLibSchemaName": "schemaVersion",
+    "apexLibBundleVersion": "1.0.2",
+    "apexLibPublishedAt": "2026-10-20T00:00:00Z",
+
+    "apexReceivePayloadJsFunctionName": "apexReceivePayload",
+    "apexLoadLibraryJsFunctionName": "apexFMPLoadLibraryPayload",
+
+    "apexFormBaseTableName": "apexForm",
+    "apexFormCOLSlandingPage": [
+      "IDapexForm",
+      "formName"
+    ],
+    "apexFormCOLSnavigateTo": [
+      "htmlCodeBase64EncodedFlat",
+      "payloadKeyQty"
+    ],
+    "apexFormCOLformName": "formName",
+    "apexFormCOLlandingPage" : "formLandingPage",
+    "apexFormCOLkeyPrimary": "IDapexForm",
+    "apexFormCOLSproperty": [
+      "formName",
+      "jsLibraryListIdCSV"
+    ],
+ 
+    "apexFormVariableBaseTableName": "apexFormVariable",
+    "apexFormVariableCOLpayloadKeyName": "payLoadKeyName",
+
+    
+    
+    "apexWebViewerSessionBaseTableName": "apexWebViewerSession",
+    "apexWindowAutoSize": 1,
+    "apexWebViewer": "apexWebViewer",
+    "apexWebViewerCOLlastAccessedTS": "formLastAccessedTS",
+    "apexWebViewerCOLkfForm": "IDapexForm",
+
+    "apexWebViewerCOLpayloadJSON": "payloadJSON",
+    "apexWebViewerCOLsessionId": "sessionId",
+    "apexWebViewerCOLkeyPrimary": "IDapexWebViewerSession",
+    "apexSearchOperatorVariable": "{?}",
+    
+
+    "apexJavaScriptLibraryBaseTableName": "apexJavaScriptLibrary",
+    "apexJavaScriptLibraryCOLkeyPrimary": "IDapexJavaScriptLibrary",
+    "apexJavaScriptLibraryCOLSproperty": [
+      "nameLibrary",
+      "jsEncodingIsBase64",
+      "jsCodeBase64EncodedFlat"
+    ]
+
+
+
+  },
+  "libraries": {
+    "fm-bridge": {
+      "version": "1.0.0",
+      "file": "/downloads/lib/v1/1.0.0/fm-bridge.js",
+      "hash": "sha256-TODO"
+    },
+    "fm-lib-loader": {
+      "version": "1.0.0",
+      "file": "/downloads/lib/v1/1.0.0/fm-lib-loader.js",
+      "hash": "sha256-TODO"
+    },
+    "fm-results-core": {
+      "version": "1.0.0",
+      "file": "/downloads/lib/v1/1.0.0/fm-results-core.js",
+      "hash": "sha256-TODO"
+    },
+    "staff-results-runtime": {
+      "version": "1.0.0",
+      "file": "/downloads/lib/v1/1.0.0/staff-results-runtime.js",
+      "hash": "sha256-TODO"
+    }
+  }
+}
