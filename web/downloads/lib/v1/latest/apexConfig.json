@@ -28,6 +28,9 @@
     "apexLibSchemaName": "schemaVersion",
     "apexLibBundleVersion": "1.0.2",
     "apexLibPublishedAt": "2026-10-20T00:00:00Z",
+    "apexWindowAutoSize": 1,
+    "apexWebViewer": "apexWebViewer",
+    "apexSearchOperatorVariable": "{?}",
 
     "apexReceivePayloadJsFunctionName": "apexReceivePayload",
     "apexLoadLibraryJsFunctionName": "apexFMPLoadLibraryPayload",
@@ -43,7 +46,7 @@
     ],
     "apexFormCOLformName": "formName",
     "apexFormCOLlandingPage" : "formLandingPage",
-    "apexFormCOLkeyPrimary": "IDapexForm",
+    "apexFormCOLprimary": "IDapexForm",
     "apexFormCOLSproperty": [
       "formName",
       "jsLibraryListIdCSV"
@@ -52,30 +55,22 @@
     "apexFormVariableBaseTableName": "apexFormVariable",
     "apexFormVariableCOLpayloadKeyName": "payLoadKeyName",
 
-    
-    
     "apexWebViewerSessionBaseTableName": "apexWebViewerSession",
-    "apexWindowAutoSize": 1,
-    "apexWebViewer": "apexWebViewer",
     "apexWebViewerCOLlastAccessedTS": "formLastAccessedTS",
-    "apexWebViewerCOLkfForm": "IDapexForm",
+    "apexWebViewerCOLformID": "IDapexForm",
 
     "apexWebViewerCOLpayloadJSON": "payloadJSON",
     "apexWebViewerCOLsessionId": "sessionId",
-    "apexWebViewerCOLkeyPrimary": "IDapexWebViewerSession",
-    "apexSearchOperatorVariable": "{?}",
+    "apexWebViewerCOLprimary": "IDapexWebViewerSession",
     
 
     "apexJavaScriptLibraryBaseTableName": "apexJavaScriptLibrary",
-    "apexJavaScriptLibraryCOLkeyPrimary": "IDapexJavaScriptLibrary",
+    "apexJavaScriptLibraryCOLprimary": "IDapexJavaScriptLibrary",
     "apexJavaScriptLibraryCOLSproperty": [
       "nameLibrary",
       "jsEncodingIsBase64",
       "jsCodeBase64EncodedFlat"
     ]
-
-
-
   },
   "libraries": {
     "fm-bridge": {
