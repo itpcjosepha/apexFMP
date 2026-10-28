@@ -1,8 +1,6 @@
-
-
 {
-  "schemaVersion": 1,
-  "apexBootstrapManifest": {
+  "apexBootstrap": {
+    "SchemaVersion" : "1.0.1",
     "title": "apexBootstrapManifest",
     "description": "Bootstrap manifest for apexFMP runtime library discovery and webviewer contract settings.",
     "designAnnotations": [
@@ -11,14 +9,12 @@
       "Library nodes are path-addressable for persistent-data bundle lookup and selective loading."
     ],
     "annotatedDate": "2026-10-27",
-    "author": "apexFMP Architecture"
+    "author": "apexFMP Architecture",
+    "channel" : "stable",
+    "bundleVersion": "1.0.4"
   },
   
- 
-  "channel": "stable",
-  "bundleVersion": "1.0.3",
-  
-  "apexGlobals": {
+   "apexGlobals": {
     "proTableColumnOperator":"::",
     "apexLibNameValue": "libraries",
     "apexLibName": "libraryName",
@@ -140,7 +136,7 @@
       "jsCodeBase64EncodedFlat"
     ]
   },
-  "libraries": {
+  "apexJsLibraries": {
     "fm-bridge": {
       "version": "1.0.0",
       "file": "/downloads/lib/v1/1.0.0/fm-bridge.js",
