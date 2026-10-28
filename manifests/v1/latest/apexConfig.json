@@ -21,7 +21,6 @@
   "apexGlobals": {
     "proTableColumnOperator":"::",
     "apexLibNameValue": "libraries",
-    "apexLibName": "schemaVersion",
     "apexPublishedAtName": "publishedAt",
     "apexPublishedAtValue": "2026-10-20T00:00:00Z",
     "apexBootStrapManifestName": "apexBootstrapManifest",
@@ -49,7 +48,7 @@
     "apexGlobalNewPrimaryKeyValue": "newPrimaryKeyValue",
     "apexGlobalNewFMPrecordId": "newFMPrecordId",
     "apexGlobalFieldName": "FieldName",
-    "apexGlobaFields": "Fields",
+    "apexGlobalFields": "Fields",
     "apexGlobalDeferredFields": "DeferredFields",
     "apexGlobalScriptResultMessage": "scriptResultMessage",
     "apexGlobalScriptResultCode": "scriptResultCode",
@@ -59,7 +58,11 @@
     "apexGlobalFileName": "fileName",
     "apexGlobalCSV": "csv",
     "apexGlobalData": "data",
-
+    "apexGlobalCOLisActive": "isActive",
+    "apexGlobal1": 1,
+    "apexGlobal0": 0,
+    "apexGlobalYes": "Yes",
+    "apexGlobalNo": "No",
     "apexGlobalOk": "ok",
     "apexGlobalMessage": "message",
     "apexGlobalUpdate": "update",
@@ -99,10 +102,9 @@
       "jsLibraryListIdCSV"
     ],
     "apexTargetWindowProperty": [
-      "nameForm" ,
+      "formName" ,
       "formWindowTitle" ,
       "htmlSizeForm" ,
-      "payloadKeyValue" ,
       "windowStyle",
       "formInstanceOne" 
     ],
@@ -119,8 +121,6 @@
     ],
     "apexFormVariableBaseTableName": "apexFormVariable",
     "apexFormVariableCOLpayloadKeyName": "payLoadKeyName",
-    "apexGlobalCOLisActive": "isActive",
-
     "apexWebViewerSessionBaseTableName": "apexWebViewerSession",
     "apexWebViewerCOLlastAccessedTS": "formLastAccessedTS",
     "apexWebViewerCOLformID": "IDapexForm",
