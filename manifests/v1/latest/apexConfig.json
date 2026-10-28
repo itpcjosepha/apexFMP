@@ -21,8 +21,10 @@
   "apexGlobals": {
     "proTableColumnOperator":"::",
     "apexLibNameValue": "libraries",
-    "apexPublishedAtName": "publishedAt",
-    "apexPublishedAtValue": "2026-10-20T00:00:00Z",
+    "apexLibName": "libraryName",
+
+    "apexLibPublishedAtName": "publishedAt",
+    "apexLibPublishedAtValue": "2026-10-20T00:00:00Z",
     "apexBootStrapManifestName": "apexBootstrapManifest",
     "apexLibSchemaVersion": 1,
     "apexLibSchemaName": "schemaVersion",
