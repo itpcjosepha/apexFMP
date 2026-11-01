@@ -1,112 +1,71 @@
-{
-  "apexBootstrap": {
-    "SchemaVersion" : "1.0.1",
-    "title": "apexBootstrapManifest",
+{"apexBootstrap": {
+
+    "annotatedDate": "2026-10-27",
+    "author": "apexFMP Architecture",
+
+    "bundleVersion": "1.0.4",
+
+    "channel" : "stable",
+
     "description": "Bootstrap manifest for apexFMP runtime library discovery and webviewer contract settings.",
     "designAnnotations": [
       "Single-source discovery manifest for library version routing.",
       "Top-level runtime variables define the baseline webviewer integration contract.",
       "Library nodes are path-addressable for persistent-data bundle lookup and selective loading."
     ],
-    "annotatedDate": "2026-10-27",
-    "author": "apexFMP Architecture",
-    "channel" : "stable",
-    "bundleVersion": "1.0.4"
+
+    "SchemaVersion" : "1.0.1",
+
+    "title": "apexBootstrapManifest"
   },
   
    "apexGlobals": {
-    "proTableColumnOperator":"::",
-    "apexLibNameValue": "libraries",
-    "apexLibName": "libraryName",
-
-    "apexLibPublishedAtName": "publishedAt",
-    "apexLibPublishedAtValue": "2026-10-20T00:00:00Z",
-    "apexBootStrapManifestName": "apexBootstrapManifest",
-    "apexLibSchemaVersion": 1,
-    "apexLibSchemaName": "schemaVersion",
-    "apexLibBundleVersion": "1.0.2",
-    "apexLibPublishedAt": "2026-10-20T00:00:00Z",
-    "apexLibProperty": [
-      "file",
-      "version",
-      "hash",
-      "code"
-    ],
-    "apexWindowAutoSize": 1,
-    "apexWebViewer": "apexWebViewer",
-    "apexSearchOperatorVariable": "{?}",
-    "apexModuleName": "module",
-    "apexModuleValueApex": "apex",
-    "apexModuleValuePro": "pro",
-    "apexGlobalRequests": "Requests",
-    "apexGlobalRequestId": "requestId",
-    "apexGlobalBaseTableName": "BaseTableName",
-    "apexGlobalPrimaryKeyColumn": "PrimaryKeyColumn",
-    "apexGlobalPrimaryKeyValue": "PrimaryKeyValue",
-    "apexGlobalNewPrimaryKeyValue": "newPrimaryKeyValue",
-    "apexGlobalNewFMPrecordId": "newFMPrecordId",
-    "apexGlobalFieldName": "FieldName",
-    "apexGlobalFields": "Fields",
-    "apexGlobalDeferredFields": "DeferredFields",
-    "apexGlobalScriptResultMessage": "scriptResultMessage",
-    "apexGlobalScriptResultCode": "scriptResultCode",
-    "apexGlobalSourceRequestId": "sourceRequestId",
-    "apexGlobalSourceFieldName": "sourceFieldName",
-    "apexGlobalId": "id",
-    "apexGlobalFileName": "fileName",
-    "apexGlobalCSV": "csv",
-    "apexGlobalData": "data",
-    "apexGlobalCOLisActive": "isActive",
-    "apexGlobal1": 1,
-    "apexGlobal0": 0,
-    "apexGlobalYes": "Yes",
-    "apexGlobalNo": "No",
-    "apexGlobalOk": "ok",
-    "apexGlobalMessage": "message",
-    "apexGlobalUpdate": "update",
-    "apexGlobalValue": "value",
-    "apexGlobalDeferred": "deferred",
-    "apexGlobalResults": "results",
-    "apexGlobalDelete": "delete",
-    "apexGlobalInsert": "insert",
-    "apexGlobalLayoutName": "layoutName",
+  
+    "apexActionCloseFile": "closeFile",
+    "apexActionConfirmDialog": "confirmDialog",
+    "apexActionDeleteAll": "deleteAll",
+    "apexActionDeleteSingle": "deleteSingle",
     "apexActionName": "action",
-    "apexActionValueRefresh": "refresh",
-    "apexActionValueNavigateTo": "navigateTo",
-    "apexActionValueNavigateWith": "navigateWith",
-    "apexActionValueConfirmDialog": "confirmDialog",
-    "apexActionValueSelectWindow": "uxWindowHistorySelectWindow",
-    "apexActionValueSelectRecord": "uxWindowHistorySelectRecord",
+    "apexActionNavigateTo": "navigateTo",
+    "apexActionNavigateWith": "navigateWith",
+    "apexActionOnLayoutSizeChange": "OnLayoutSizeChange",
+    "apexActionOpenURLDialog0": "openURLDialog0",
+    "apexActionOpenURLDialog1": "openURLDialog1",
+    "apexActionRefresh": "refresh",
+    "apexActionSelectRecord": "uxWindowHistorySelectRecord",
+    "apexActionSelectWindow": "uxWindowHistorySelectWindow",
+    "apexActionSingleView": "singleView",
+    "apexActionTile": "tile",
+    "apexActionUxWindow": "uxWindow",
+    "apexActionUxWindowHistory": "uxWindowHistory",
+    "apexActionWindowZoom": "windowZoom",
+    "apexActionZoom+": "zoom+",
+    "apexActionZoom-": "zoom-",
+    "apexActionZoom=": "zoom=",
 
-    "apexFormID": "formID",
+    "apexBootStrapManifestName": "apexBootstrapManifest",
 
-    "apexReceivePayloadJsFunctionName": "apexReceivePayload",
-    "apexLoadLibraryJsFunctionName": "apexFMPLoadLibraryPayload",
     "apexFormBaseTableName": "apexForm",
-    "apexFormCOLSlandingPage": [
+    "apexFormFormID": "formID",
+    "apexFormFormName": "formName",
+    "apexFormHtmlSizeForm": "htmlSizeForm",
+    "apexFormLandingPage" : "formLandingPage",
+    "apexFormLandingPageCOLS": [
       "IDapexForm",
       "formName"
     ],
-    "apexFormCOLSnavigateTo": [
+    "apexFormNavigateToCOLS": [
       "htmlCodeBase64EncodedFlat",
       "payloadKeyQty"
     ],
-    "apexFormCOLformName": "formName",
-    "apexFormCOLhtmlSizeForm": "htmlSizeForm",
-    "apexFormCOLlandingPage" : "formLandingPage",
-    "apexFormCOLprimary": "IDapexForm",
-    "apexFormCOLSproperty": [
+    "apexFormPrimaryID": "IDapexForm",
+    "apexFormPropertyCOLS": [
       "formName",
-      "jsLibraryListIdCSV"
+      "jsLibraryIdListCSV"
     ],
-    "apexTargetWindowProperty": [
-      "formName" ,
-      "formWindowTitle" ,
-      "htmlSizeForm" ,
-      "windowStyle",
-      "formInstanceOne" 
-    ],
-     "apexFormVariableCOLSproperty": [
+    "apexFormVariableBaseTableName": "apexFormVariable",
+    "apexFormVariablePayloadKeyName": "payLoadKeyName",
+    "apexFormVariablePropertyCOLS": [
       "payloadKeyName" ,
       "FQLqueryFormatted" ,
       "FQLNullResultValid" ,
@@ -117,24 +76,100 @@
       "fqlQueryTypeIsRunTime", 
       "fqlQueryTypeIsProFind" 
     ],
-    "apexFormVariableBaseTableName": "apexFormVariable",
-    "apexFormVariableCOLpayloadKeyName": "payLoadKeyName",
-    "apexWebViewerSessionBaseTableName": "apexWebViewerSession",
-    "apexWebViewerCOLlastAccessedTS": "formLastAccessedTS",
-    "apexWebViewerCOLformID": "IDapexForm",
-    "apexWebViewerCOLpayloadJSON": "payloadJSON",
-    "apexWebViewerCOLsessionId": "sessionId",
-    "apexWebViewerCOLprimary": "IDapexWebViewerSession",
-    "apexWebViewerCOLformParam": "formParam",
-    "apexWebViewerCOLwindowName": "windowName",
 
+    "apexGlobal0": 0,
+    "apexGlobal1": 1,
+    "apexGlobalBaseTableName": "baseTableName",
+    "apexGlobalCSV": "csv",
+    "apexGlobalData": "data",
+    "apexGlobalDataSaveCSV": "dataSaveAsCSV",
+    "apexGlobalDeferred": "deferred",
+    "apexGlobalDeferredFields": "deferredFields",
+    "apexGlobalDelete": "delete",
+    "apexGlobalFieldName": "fieldName",
+    "apexGlobalFields": "fields",
+    "apexGlobalFileName": "fileName",
+    "apexGlobalId": "id",
+    "apexGlobalInsert": "insert",
+    "apexGlobalIsActive": "isActive",
+    "apexGlobalJson": "json",
+    "apexGlobalLayoutName": "layoutName",
+    "apexGlobalLayoutScriptTriggerEvent": "layoutScriptTriggerEvent",
+    "apexGlobalMessage": "message",
+    "apexGlobalNewFMPrecordId": "newFMPrecordId",
+    "apexGlobalNewPrimaryKeyValue": "newPrimaryKeyValue",
+    "apexGlobalNext": "next",
+    "apexGlobalNo": "No",
+    "apexGlobalOk": "ok",
+    "apexGlobalPrevious": "previous",
+    "apexGlobalPrimaryKeyColumn": "primaryKeyColumn",
+    "apexGlobalPrimaryKeyValue": "primaryKeyValue",
+    "apexGlobalRequestId": "requestId",
+    "apexGlobalRequests": "requests",
+    "apexGlobalResults": "results",
+    "apexGlobalScriptResultCode": "scriptResultCode",
+    "apexGlobalScriptResultMessage": "scriptResultMessage",
+    "apexGlobalSourceFieldName": "sourceFieldName",
+    "apexGlobalSourceRequestId": "sourceRequestId",
+    "apexGlobalUpdate": "update",
+    "apexGlobalValue": "value",
+    "apexGlobalWindowAutoSize": "windowAutoSize",
+    "apexGlobalYes": "Yes",
+   
     "apexJavaScriptLibraryBaseTableName": "apexJavaScriptLibrary",
-    "apexJavaScriptLibraryCOLprimary": "IDapexJavaScriptLibrary",
-    "apexJavaScriptLibraryCOLSproperty": [
+    "apexJavaScriptLibraryPrimaryID": "IDapexJavaScriptLibrary",
+    "apexJavaScriptLibraryPropertyCOLS": [
       "nameLibrary",
       "jsEncodingIsBase64",
       "jsCodeBase64EncodedFlat"
-    ]
+    ],
+    "apexJsFunctionLoadLibrary": "apexFMPLoadLibraryPayload",
+    "apexJsFunctionReceivePayload": "apexReceivePayload",
+  
+    "apexLibBundleVersion": "1.0.2",
+    "apexLibName": "libraryName",
+    "apexLibNameValue": "libraries",
+    "apexLibProperty": [
+      "file",
+      "version",
+      "hash",
+      "code"
+    ],
+    "apexLibPublishedAt": "2026-10-20T00:00:00Z",
+    "apexLibPublishedAtName": "publishedAt",
+    "apexLibPublishedAtValue": "2026-10-20T00:00:00Z",
+    "apexLibSchemaName": "schemaVersion",
+    "apexLibSchemaVersion": 1,
+   
+    "apexModuleApex": "apex",
+    "apexModuleName": "module",
+    "apexModulePro": "pro",
+    
+    "apexSearchOperatorVariable": "{?}",
+
+    "apexTargetWindowPropertyCOLS": [
+      "formName" ,
+      "formWindowTitle" ,
+      "htmlSizeForm" ,
+      "windowStyle",
+      "formInstanceOne" 
+    ],
+
+    "apexWebViewerFormID": "IDapexForm",
+    "apexWebViewerFormParam": "formParam",
+    "apexWebViewerLastAccessedTS": "formLastAccessedTS",
+    "apexWebViewerName": "apexWebViewer",
+    "apexWebViewerPayloadJson": "payloadJSON",
+    "apexWebViewerPrimaryID": "IDapexWebViewerSession",
+    "apexWebViewerSessionBaseTableName": "apexWebViewerSession",
+    "apexWebViewerSessionId": "sessionId",
+    "apexWebViewerWindowName": "windowName",
+
+    "apexWindowAutoSize": 1,
+
+    "jsonOperator": ":",
+    
+    "proTableColumnOperator":"::"
   },
   "apexJsLibraries": {
     "fm-bridge": {
