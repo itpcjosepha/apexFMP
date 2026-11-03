@@ -24,6 +24,8 @@
     "apexActionCloseFile": "closeFile",
     "apexActionConfirmDialog": "confirmDialog",
     "apexActionDeleteAll": "deleteAll",
+    "apexActionDeleteCurrent": "deleteCurrent",
+    "apexActionDeleteAllName": "History List • Remove All",
     "apexActionDeleteSingle": "deleteSingle",
     "apexActionName": "action",
     "apexActionNavigateTo": "navigateTo",
@@ -35,14 +37,19 @@
     "apexActionSelectRecord": "uxWindowHistorySelectRecord",
     "apexActionSelectWindow": "uxWindowHistorySelectWindow",
     "apexActionSingleView": "singleView",
+    "apexActionSingleViewName": "Single",
     "apexActionTile": "tile",
+    "apexActionTileName": "Arrange",
     "apexActionUxWindow": "uxWindow",
     "apexActionUxWindowHistory": "uxWindowHistory",
+    "apexActionUxWindowHistoryName": "History",
     "apexActionWindowZoom": "windowZoom",
     "apexActionZoom+": "zoom+",
     "apexActionZoom-": "zoom-",
     "apexActionZoom=": "zoom=",
-
+    "apexActionZoomOutName": "Zoom Out { - }",
+    "apexActionZoomInName": "Zoom In { + }",
+    
     "apexBootStrapManifestName": "apexBootstrapManifest",
 
     "apexFormBaseTableName": "apexForm",
@@ -99,9 +106,11 @@
     "apexGlobalNewFMPrecordId": "newFMPrecordId",
     "apexGlobalNewPrimaryKeyValue": "newPrimaryKeyValue",
     "apexGlobalNext": "next",
+    "apexGlobalNextName": "{ Forward + }",
     "apexGlobalNo": "No",
     "apexGlobalOk": "ok",
     "apexGlobalPrevious": "previous",
+    "apexGlobalPreviousName": "{ - Back }",
     "apexGlobalPrimaryKeyColumn": "primaryKeyColumn",
     "apexGlobalPrimaryKeyValue": "primaryKeyValue",
     "apexGlobalRequestId": "requestId",
@@ -164,9 +173,10 @@
     "apexWebViewerSessionBaseTableName": "apexWebViewerSession",
     "apexWebViewerSessionId": "sessionId",
     "apexWebViewerWindowName": "windowName",
+    "apexWebViewerUxHistoryPortalName": "uxWindowHistoryPortal",
 
     "apexWindowAutoSize": 1,
-
+    "apexWindowAutoSizeName": "Auto Size",
     "jsonOperator": ":",
     
     "proTableColumnOperator":"::"
